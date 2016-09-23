@@ -133,7 +133,7 @@ bool setupGraphics(int w, int h) {
         LOGE("Could not create program.");
         return false;
     }
-    gvPositionHandle = glGetAttribLocation(gProgram, "vPosition");
+    gvPositionHandle = (GLuint) glGetAttribLocation(gProgram, "vPosition");
     checkGlError("glGetAttribLocation");
     LOGI("glGetAttribLocation(\"vPosition\") = %d\n",
             gvPositionHandle);
