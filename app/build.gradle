@@ -7,7 +7,7 @@ model {
         defaultConfig {
             applicationId = 'idv.windperson.demo.gl2jni'
             minSdkVersion.apiLevel = 5
-            targetSdkVersion.apiLevel = 23
+            targetSdkVersion.apiLevel = 24
         }
         ndk {
             platformVersion = 9
