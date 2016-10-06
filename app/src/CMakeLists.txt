@@ -4,7 +4,7 @@ set(CMAKE_VERBOSE_MAKEFILE on)
 
 # now build app's shared lib
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
-set(gl2jni_SRCS main/cpp/gl_code.cpp)
+file(GLOB gl2jni_SRCS "main/cpp/*.cpp")
 add_library(gl2jni SHARED ${gl2jni_SRCS})
 
 # add lib dependencies
